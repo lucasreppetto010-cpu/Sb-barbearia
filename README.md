@@ -48,12 +48,12 @@ Projeto do site da **SB Barbearia** com páginas públicas e **sistema de agenda
 - 
 ## 📸 Preview
 
-![Home](assets/img/Readme-1)
+![Home](assets/img/Readme-1.png)
 
 
 
 
 ## 📸 Preview
 
-![Home](assets/img/Readme-2)
+![Home](assets/img/Readme-2.png)
 
