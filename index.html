@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SB Barbearia</title>
+  <meta name="description" content="SB Barbearia — cortes, barba e estilo. Agende seu horário." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar" id="topo">
+    <div class="container topbar__inner">
+      <a class="brand" href="#topo" aria-label="SB Barbearia">
+        <img class="brand__logo" src="assets/img/logo.png" alt="SB Barbearia" />
+        <span class="brand__name">SB BARBEARIA</span>
+      </a>
+
+      <button class="navbtn" id="navbtn" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio">INÍCIO</a>
+        <a href="#portfolio">PORTFÓLIO</a>
+        <a href="#precos">PREÇOS</a>
+        <a href="#agendar" class="nav__cta">AGENDAR</a>
+      </nav>
+    </div>
+    <div class="topbar__line"></div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="assets/img/hero.jpg" alt="" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <img class="hero__logo" src="assets/img/logo.png" alt="SB Barbearia" />
+        <h1 class="hero__title"><span>SB</span> Barbearia</h1>
+        <p class="hero__sub">O tratamento ideal para você é aqui.</p>
+        <p class="hero__addr">Avenida Daltro Filho 750 — Ao lado da farmácia são joão</p>
+        <a class="btn btn--gold" href="#agendar">AGENDE AGORA</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">QUEM SOMOS</p>
+        <h2 class="title">Sobre a Barbearia</h2>
+      </div>
+
+      <div class="about">
+        <img class="about__logo" src="assets/img/logo.png" alt="SB Barbearia" />
+
+        <div class="about__text">
+          <p>
+            A <strong class="gold">SB Barbearia</strong> nasceu com o propósito de oferecer o melhor em cortes masculinos,
+            barba e tratamentos estéticos. Com profissionais experientes e um ambiente pensado para o seu conforto,
+            cada detalhe é cuidado para que você saia renovado.
+          </p>
+          <p>
+            Aqui você encontra qualidade, estilo e atendimento de primeira. Mais do que uma barbearia,
+            somos um espaço de cuidado pessoal e autoestima masculina.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">NOSSO TRABALHO</p>
+        <h2 class="title">Portfólio</h2>
+      </div>
+
+      <div class="grid3">
+        <figure class="photo"><img src="assets/img/portfolio-1.jpg" alt="Corte 1" loading="lazy" /> <figcaption class="photo__label">Corte Degradê</figcaption></figure>
+        <figure class="photo"><img src="assets/img/portfolio-2.jpg" alt="Corte 2" loading="lazy" /> <figcaption class="photo__label">FreeStyle</figcaption></figure>
+        <figure class="photo"><img src="assets/img/portfolio-3.jpg" alt="Corte 3" loading="lazy" /> <figcaption class="photo__label">Degradê Navalhado</figcaption></figure>
+        <figure class="photo"><img src="assets/img/portfolio-4.jpg" alt="Corte 4" loading="lazy" /> <figcaption class="photo__label">Degrade Barba</figcaption></figure>
+        <figure class="photo"><img src="assets/img/portfolio-5.jpg" alt="Corte 5" loading="lazy" /> <figcaption class="photo__label">Corte Moderno</figcaption></figure>
+        <figure class="photo"><img src="assets/img/portfolio-6.jpg" alt="Corte 6" loading="lazy" /> <figcaption class="photo__label">Corte Infantil</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="espaco">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">CONHEÇA</p>
+        <h2 class="title">Nosso Espaço</h2>
+      </div>
+
+      <div class="grid3">
+        <figure class="photo"><img src="assets/img/espaco-1.jpg" alt="Espaço 1" loading="lazy" /> <figcaption class="photo__label">Ambiente</figcaption></figure>
+        <figure class="photo"><img src="assets/img/espaco-2.jpg" alt="Espaço 2" loading="lazy" /> <figcaption class="photo__label">Bebidas</figcaption></figure>
+        <figure class="photo"><img src="assets/img/espaco-3.jpg" alt="Espaço 3" loading="lazy" /> <figcaption class="photo__label">Área de Atendimento</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="precos">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">SERVIÇOS</p>
+        <h2 class="title">Tabela de Preços</h2>
+      </div>
+
+      <div class="prices">
+        <article class="price">
+          <div class="price__left">
+            <span class="price__icon">✂</span>
+            <div><h3>Corte Social / Moderno</h3><p>Corte social ou moderno com finalização</p></div>
+          </div>
+          <div class="price__value">R$ 35</div>
+        </article>
+
+        <article class="price">
+          <div class="price__left">
+            <span class="price__icon">✂</span>
+            <div><h3>Barba</h3><p>Modelagem completa com toalha quente</p></div>
+          </div>
+          <div class="price__value">R$ 25</div>
+        </article>
+
+        <article class="price">
+          <div class="price__left">
+            <span class="price__icon">✂</span>
+            <div><h3>Sobrancelha</h3><p>Design e limpeza com navalha</p></div>
+          </div>
+          <div class="price__value">R$ 10</div>
+        </article>
+
+        <article class="price">
+          <div class="price__left">
+            <span class="price__icon">✂</span>
+            <div><h3>Alisamento</h3><p>Alisamento capilar profissional</p></div>
+          </div>
+          <div class="price__value">A partir de R$ 35</div>
+        </article>
+
+        <article class="price">
+          <div class="price__left">
+            <span class="price__icon">✂</span>
+            <div><h3>Platinado / Luzes</h3><p>Descoloração e luzes personalizadas</p></div>
+          </div>
+          <div class="price__value">A partir de R$ 120</div>
+        </article>
+
+        <article class="price price--highlight">
+          <div class="price__left">
+            <span class="price__icon">✨</span>
+            <div><h3 class="gold">Combo Completo</h3><p>Corte + Barba + Sobrancelha</p></div>
+          </div>
+          <div class="price__value gold">R$ 65</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="agendar">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">AGENDAMENTO</p>
+        <h2 class="title">Marque seu Horário</h2>
+        <p class="muted center">Escolha barbeiro, data e horário (tempo real).</p>
+      </div>
+
+      <div class="booking">
+        <form class="form" id="bookingForm">
+          <div class="form__row"><input id="nome" type="text" placeholder="Seu nome" required></div>
+          <div class="form__row"><input id="telefone" type="tel" placeholder="Seu WhatsApp (DDD + número)" required></div>
+
+          <div class="form__row">
+            <select id="barbeiro" required>
+              <option value="" selected disabled>Selecione o barbeiro</option>
+              <option value="b1">Denner</option>
+              <option value="b2">Lucas Reppetto</option>
+              <option value="b3">Lucas Prates</option>
+            </select>
+          </div>
+
+          <div class="form__row">
+            <select id="servico" required>
+              <option value="" selected disabled>Selecione o serviço</option>
+              <option>Corte Social / Moderno</option>
+              <option>Barba</option>
+              <option>Sobrancelha</option>
+              <option>Alisamento</option>
+              <option>Platinado / Luzes</option>
+              <option>Combo Completo</option>
+            </select>
+          </div>
+
+          <div class="form__row form__row--2">
+            <input id="data" type="date" required>
+            <select id="hora" required>
+              <option value="" selected disabled>--:--</option>
+            </select>
+          </div>
+
+          <div class="availability" id="availability"></div>
+
+          <button class="btn btn--gold btn--wide" type="submit">CONFIRMAR AGENDAMENTO</button>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+          <p class="muted small">Área do barbeiro: <a class="gold" href="barber.html">entrar</a></p>
+        </form>
+
+        <aside class="panel">
+          <h3 class="panel__title">Como funciona</h3>
+          <p class="muted">
+            Selecione o barbeiro e a data. Os horários ocupados aparecem automaticamente.
+            Ao confirmar, o horário fica bloqueado em tempo real.
+          </p>
+          <div class="legend">
+            <span class="slot">Disponível</span>
+            <span class="slot slot--taken">Ocupado</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="local">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">ENCONTRE-NOS</p>
+        <h2 class="title">Localização & Horários</h2>
+      </div>
+
+      <div class="loc">
+        <div class="loc__left">
+          <h3 class="loc__h gold">Endereço</h3>
+          <p class="muted">
+            Avenida Daltro Filho, 750 — Santana do Livramento/RS<br>
+            — Ao lado da farmácia são joão
+          </p>
+
+          <a class="btn btn--gold btn--small" id="comoChegar" target="_blank" rel="noopener">COMO CHEGAR</a>
+
+          <h3 class="loc__h gold" style="margin-top:22px;">Horário de Funcionamento</h3>
+          <div class="hours">
+            <div class="hours__row"><span>Segunda a Sexta</span><strong>09:00 — 19:00</strong></div>
+            <div class="hours__row"><span>Sábado</span><strong>09:00 — 20:00</strong></div>
+            <div class="hours__row"><span>Domingo</span><strong class="closed">Fechado</strong></div>
+          </div>
+        </div>
+
+        <div class="loc__map">
+          <iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Avenida%20Daltro%20Filho%20750%20Santana%20do%20Livramento%20RS&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__brandline">
+          <img src="assets/img/logo.png" alt="SB" />
+          <strong class="gold">SB BARBEARIA</strong>
+        </div>
+        <p class="muted">O tratamento ideal para você é aqui. Estilo e qualidade em cada detalhe.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="gold">Contato</h4>
+        <p class="muted">(55) 99729-8329</p>
+        <p class="muted">Avenida Daltro Filho 750</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="gold">Horários</h4>
+        <p class="muted">Seg a Sex: 9h até 12h - 14h até 19h</p>
+        <p class="muted">Sábado: 9h até 12h - 14h até 20h</p>
+        <p class="muted">Domingo: Fechado</p>
+      </div>
+    </div>
+
+    <div class="footer__copy">
+      <div class="container">© <span id="year"></span> SB Barbearia. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+
+  <script type="module" src="booking-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel — SB Barbearia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="section" style="padding-top:40px;">
+    <div class="container" style="width:min(980px, calc(100% - 30px));">
+
+      <div class="panel">
+        <div class="appbar">
+          <div>
+            <div class="appbar__title">Agenda</div>
+            <div class="appbar__sub" id="whoami">Faça login</div>
+          </div>
+          <button class="btn btn--ghost" id="logoutBtn" type="button" style="display:none;">Sair</button>
+        </div>
+
+        <!-- LOGIN -->
+        <form class="form" id="loginForm">
+          <div class="form__row"><input id="email" type="email" placeholder="Email" required></div>
+          <div class="form__row"><input id="password" type="password" placeholder="Senha" required></div>
+          <button class="btn btn--gold btn--wide" type="submit">ENTRAR</button>
+          <p class="status" id="loginStatus"></p>
+        </form>
+
+        <!-- UI -->
+        <div id="agendaUI" style="display:none;">
+          <div class="cal">
+            <div class="cal__top">
+              <button class="cal__nav" id="prevDay" type="button">‹</button>
+              <div class="cal__month" id="monthLabel">—</div>
+              <button class="cal__nav" id="nextDay" type="button">›</button>
+            </div>
+
+            <div class="cal__row">
+              <select id="barberPick">
+                <option value="b1">Denner</option>
+                <option value="b2">Lucas Reppetto</option>
+                <option value="b3">Lucas Prates</option>
+              </select>
+
+              <input class="cal__date" id="day" type="date" />
+              <button class="btn btn--gold" id="addBtn" type="button">+ Marcar</button>
+            </div>
+          </div>
+
+          <div class="legend" style="margin: 10px 0 14px;">
+            <span class="pill pill--free">Livre</span>
+            <span class="pill pill--booked">Marcado</span>
+            <span class="pill pill--off">Intervalo</span>
+          </div>
+
+          <div class="daylist" id="dayList"></div>
+          <p class="status" id="agendaStatus"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL MARCAR (admin pode marcar inclusive no intervalo) -->
+  <div class="modal" id="bookModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 class="panel__title" id="modalTitle">Marcar horário</h3>
+
+      <form class="form" id="adminBookForm">
+        <div class="form__row">
+          <label class="muted small">Horário</label>
+          <select id="m_time" required></select>
+        </div>
+
+        <div class="form__row">
+          <label class="muted small">Nome do cliente</label>
+          <input id="m_name" type="text" required placeholder="Nome do cliente">
+        </div>
+
+        <div class="form__row">
+          <label class="muted small">Telefone</label>
+          <input id="m_phone" type="tel" required placeholder="(55) 99999-9999">
+        </div>
+
+        <div class="form__row">
+          <label class="muted small">Serviço</label>
+          <input id="m_service" type="text" required placeholder="Ex: Corte + Barba">
+        </div>
+
+        <div class="modal__actions">
+          <button class="btn btn--ghost" type="button" data-close="1">Fechar</button>
+          <button class="btn btn--gold" type="submit">Marcar</button>
+        </div>
+
+        <p class="status" id="modalStatus"></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="barber-ui.js"></script>
+</body>
+</html>
