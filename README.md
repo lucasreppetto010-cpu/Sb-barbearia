@@ -44,8 +44,15 @@ Projeto do site da **SB Barbearia** com páginas públicas e **sistema de agenda
 ### ✅ Integrações
 - **WhatsApp Link (wa.me)** para abrir conversa com mensagem predefinida
 - **Google Maps Embed** para localização
-
 - 
+## 📱 Responsivo (Responsive)
+O site foi desenvolvido com **layout responsivo**, adaptando-se automaticamente para:
+- 📱 Celulares
+- 📟 Tablets
+- 💻 Desktop
+
+A navegação e os componentes (cards, tabelas, formulário de agendamento e painel) ajustam grid, espaçamentos e fontes conforme o tamanho da tela.
+  
 ## 📸 Preview
 
 ![Home](assets/img/Readme-1.png)
